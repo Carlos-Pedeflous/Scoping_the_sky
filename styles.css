@@ -133,6 +133,65 @@ img {
     transform: scale(1.1);
 }
 
+/* main config */
+
+main {
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 100px;
+}
+
+main > p,
+section > p,
+article > p {
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+
+main > p {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+main h3 {
+    font-size: 1.4rem;
+    margin: 1.2rem 0 0.8rem;
+}
+
+main h4 {
+    font-size: 1.15rem;
+    margin: 1rem 0 0.6rem;
+}
+
+main section {
+    width: 100%;
+    padding: 24px 5%;
+    scroll-margin-top: 20px;
+}
+
+main article {
+    width: 100%;
+    max-width: 1100px;
+    margin: 28px auto;
+    min-width: 0;
+}
+
+main article p {
+    max-width: 100%;
+}
+
+main ul {
+    padding-left: 24px;
+    margin: 12px 0 20px;
+    line-height: 1.7;
+}
+
 /* reproductor de musica */
 
 #music-player {
@@ -354,4 +413,159 @@ img {
 
     background: white;
     cursor: pointer;
+}
+
+.intro {
+    min-height: 75vh;
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 15%;
+}
+
+.intro h2 {
+    margin-bottom: 30px;
+}
+
+.intro p {
+    max-width: 900px;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+    #navegador ul {
+        gap: 16px;
+    }
+
+    #navegador a {
+        font-size: 1.25rem;
+        padding: 8px 12px;
+    }
+
+    main section {
+        padding: 20px 4%;
+    }
+
+    #music-player {
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    #track-info {
+        flex-basis: 140px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #inicio {
+        gap: 28px;
+        padding: 24px 12px;
+    }
+
+    #inicio > a {
+        width: min(420px, 85vw);
+    }
+
+    #navegador ul {
+        gap: 10px;
+    }
+
+    #navegador a {
+        font-size: 1rem;
+        padding: 7px 9px;
+        gap: 6px;
+    }
+
+    #navegador a img {
+        width: 23px;
+        height: 17px;
+    }
+
+    main > p {
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    main section {
+        padding: 18px 16px;
+    }
+
+    main article {
+        margin: 22px auto;
+    }
+
+    article img {
+        width: 280px;
+        max-width: 100%;
+        margin: 3px 0;
+    }
+
+    #music-player {
+        bottom: 10px;
+        width: calc(100% - 20px);
+        padding: 8px;
+        gap: 7px;
+    }
+
+    #track-info {
+        flex: 0 1 115px;
+    }
+
+    #track-title {
+        font-size: 10px;
+    }
+
+    #track-artist {
+        font-size: 8px;
+    }
+
+    #current-time,
+    #duration {
+        min-width: 25px;
+        font-size: 9px;
+    }
+
+    #volume-bar {
+        width: 45px;
+        flex-basis: 45px;
+        min-width: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #navegador ul {
+        gap: 8px;
+    }
+
+    #navegador a {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    #music-player {
+        gap: 5px;
+    }
+
+    #track-artist,
+    #volume-bar {
+        display: none;
+    }
+
+    #track-info {
+        flex: 0 1 105px;
+    }
+
+    #progress-bar {
+        min-width: 25px;
+    }
 }
