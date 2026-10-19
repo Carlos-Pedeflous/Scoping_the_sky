@@ -214,3 +214,25 @@ function formatTime(seconds) {
     return `${minutes}:${secs}`;
 
 }
+
+// Movimiento del separador
+
+const divider = document.querySelector(".section-divider");
+const dividerImage = divider.querySelector("img");
+
+window.addEventListener("scroll", () => {
+
+    const rect = divider.getBoundingClientRect();
+
+    const movement = -rect.top * 0.30;
+
+    const maxMovement = divider.offsetHeight * 0.20;
+
+    const limitedMovement = Math.max(
+        -maxMovement,
+        Math.min(maxMovement, movement)
+    );
+
+    dividerImage.style.transform = `translateY(${limitedMovement}px)`;
+
+});

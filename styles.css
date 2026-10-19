@@ -417,7 +417,7 @@ main ul {
 
 .intro {
     min-height: 75vh;
-    background-color: #000;
+    background-color:  rgba(5, 5, 5, 0.95); 
 
     display: flex;
     flex-direction: column;
@@ -437,6 +437,134 @@ main ul {
     max-width: 900px;
     line-height: 1.7;
 }
+
+
+/* Separador entre introducción y rally */
+
+.section-divider {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-divider img {
+    position: absolute;
+
+    width: 100%;
+    height: 150%;
+
+    top: -5%;
+    left: 0;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    will-change: transform;
+}
+
+.section-divider::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(5, 5, 5, 0.95),
+        rgba(5, 5, 5, 0.15),
+        rgba(5, 5, 5, 0.95)
+    );
+
+    pointer-events: none;
+}
+
+/* ENCABEZADO DE RALLY */
+
+#eyebrow-rally {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    font-family: "OCR-B", monospace;
+    font-size: 0.75rem;
+    color: #999;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+#rally > h2 {
+    font-family: "Eurostile", sans-serif;
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 1;
+    margin: 25px 0 12px;
+}
+
+#rally > h2 + p {
+    font-family: "OCR-B", monospace;
+    color: #aaa;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+
+/* DISTRIBUCIÓN DE LOS BLOQUES */
+
+#el-origen-box,
+#La-evolucion-box,
+#grupo-b-box {
+    background: #111;
+    border: 1px solid #292929;
+    padding: clamp(24px, 4vw, 48px);
+    min-width: 0;
+}
+
+#el-origen-box h3,
+#La-evolucion-box h3,
+#grupo-b-box h3 {
+    color: #e50000;
+    font-family: "OCR-B", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+#el-origen-box h4,
+#La-evolucion-box h4,
+#grupo-b-box h4 {
+    font-family: "Eurostile", sans-serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+#el-origen-box p,
+#La-evolucion-box p,
+#grupo-b-box p {
+    color: #c5c5c5;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 700px) {
+    #eyebrow-rally {
+        flex-wrap: wrap;
+        font-size: 0.65rem;
+    }
+
+    #el-origen-box,
+    #La-evolucion-box,
+    #grupo-b-box {
+        padding: 24px;
+    }
+}
+
 
 @media (max-width: 900px) {
 

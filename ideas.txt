@@ -1,221 +1,4 @@
-<h2>MI COLECCIÓN</h2>
 
-        <section id="rally">
-            <h2>Rally</h2>
-            
-            <h3>Introducción</h3>
-            <p>El rally es algo que llegó a mi vida a temprana edad. Recuerdo tener 14 años y jugar en la PlayStation 1 de mi hermano mayor a juegos de rally del WRC. En ese momento simplemente
-               disfrutaba de los autos y las carreras, pero ya de más grande empecé a interesarme por cómo las marcas adaptaban sus autos para competir en rally y por toda la ingeniería que había
-               detrás de ellos.</p>
-
-            <h3>Historia y perspectiva personal</h3>
-
-            <p>Fui aprendiendo sobre el rally de una manera bastante cronológica, y por eso me pegó muy fuerte conocer el cambio que produjo la llegada del Lancia Stratos. Me fascinó descubrir que Lancia
-               había creado un auto pensado específicamente para competir y que después tuvo que producir una versión de calle para poder homologarlo. El Stratos fue homologado por la FIA en 1974 dentro
-               del Grupo 4 y terminó convirtiéndose en uno de los autos más importantes de la historia del rally.</p>
-
-            <p>Creo que ahí empezó una parte importante de mi pasión por Lancia. Después llegaron creaciones monstruosas como el 037 y el Delta S4, que representan perfectamente esa época en la que las
-               marcas buscaban llevar al límite las posibilidades de los reglamentos. El Grupo B, que entró en vigor en 1982, permitió una libertad técnica enorme y terminó dando lugar a algunos de los
-               autos más extremos que se hayan visto en el rally.</p>
-
-            <p>Lancia también me fascina por las pequeñas picardías y soluciones que
-               aparecieron durante esa época. Una de las historias que más me llama la
-               atención es la del 037, un auto de tracción trasera que tuvo que
-               enfrentarse a rivales de tracción integral. A pesar de esa desventaja,
-               Lancia consiguió ganar el Campeonato Mundial de Constructores de 1983,
-               convirtiéndose en el último fabricante en conseguirlo con un auto de
-               tracción trasera.</p>
-
-            <p>Pero Lancia no fue la única marca que hizo que me enamorara del rally. También están el Ford RS200, con su motor central, tracción integral y su chasis de aluminio; el carisma del
-               Peugeot 205 T16; y, por supuesto, el Audi Quattro, que me enamoro con el sonido angelical de su motor de 5 cilindros en línea, y el turbocompresor kkk.
-               si tuviera que mencionar a un piloto en particular sin lugar a dudas esa seria Michèle Mouton</p>
-            
-            <article>
-
-                <p><strong>Auto especial</strong></p>
- 
-                <h3>Lancia Delta S4</h3>
-
-                <h4>Historia</h4>
-
-                <p>
-                El Lancia Delta S4 nació como respuesta de Lancia a una nueva era del rally.
-                A comienzos de los años 80, el Grupo B permitió a los fabricantes desarrollar
-                autos prácticamente sin límites, y Lancia necesitaba un reemplazo para el
-                037, que empezaba a quedar en desventaja frente a los nuevos autos de
-                tracción integral.
-                </p>
-
-                <p>
-                Lancia, junto con Abarth, desarrolló un auto que tenía muy poco que ver
-                mecánicamente con el Delta de calle. El S4 utilizaba un chasis tubular,
-                motor central longitudinal de cuatro cilindros y tracción integral. Pero
-                probablemente su característica más llamativa era su sistema de inducción
-                forzada: utilizaba un compresor volumétrico y un turbocompresor trabajando
-                juntos. El compresor ayudaba a entregar respuesta a bajas revoluciones,
-                mientras que el turbo permitía obtener una enorme potencia cuando el motor
-                subía de vueltas.
-                </p>
-
-                <p>
-                Para poder competir en el Grupo B, Lancia tuvo que construir las unidades
-                necesarias para su homologación de calle. Así nació el Delta S4 Stradale,
-                una versión de carretera basada en el auto de competición, aunque bastante
-                más civilizada.
-                </p>
-
-                <p>
-                El Delta S4 fue homologado por la FIA en noviembre de 1985 y debutó en el
-                Campeonato Mundial de Rally en el Rally de Gran Bretaña de ese mismo año.
-                Lancia tuvo un debut prácticamente perfecto: Henri Toivonen ganó el rally
-                y Markku Alén terminó segundo, consiguiendo un doblete para la marca.
-                </p>
-
-                <p>
-                En 1986 el S4 se convirtió en uno de los principales protagonistas del
-                campeonato. Toivonen consiguió una victoria en el Rally de Montecarlo y
-                Lancia volvió a demostrar que tenía uno de los autos más rápidos de toda
-                la categoría. Sin embargo, aquella temporada también marcaría el comienzo
-                del final para el Grupo B.
-                </p>
-
-                <p>
-                En el Rally de Córcega de 1986, Henri Toivonen y su copiloto Sergio Cresto
-                fallecieron en un accidente mientras competían con un Delta S4. Después de
-                una temporada marcada por varios accidentes graves, la FIA decidió
-                cancelar el Grupo B para 1987.
-                </p>
-
-                <p>
-                La desaparición del Grupo B puso un final prematuro a la carrera del Delta
-                S4. Lancia abandonó aquel proyecto y pasó a competir con el Delta en Grupo A,
-                comenzando una de las etapas más exitosas de la historia del rally. Aunque
-                el S4 tuvo una vida competitiva muy corta, quedó como uno de los símbolos
-                más extremos de aquella época y como uno de los últimos grandes exponentes
-                del Grupo B.
-                </p>
-
-                <audio controls>
-                <source src="audio/lancia-delta-s4.mp3" type="audio/mpeg">
-                </audio>
-
-                <h4>Galería</h4>
-
-                <img src="assets/imagenes/delta/delta-01.jpg" alt="Lancia Delta S4 en primer plano" width="400">
-                <img src="assets/imagenes/delta/delta-02.jpg" alt="Lancia Delta S4 enfocado en el faro delantero" width="400">
-                <img src="assets/imagenes/delta/delta-03.jpg" alt="Lancia Delta S4 enfocado en las luces traseras" width="400">
-                <img src="assets/imagenes/delta/delta-04.jpg" alt="Lancia Delta S4 enfocado en la parte trasera del auto" width="400">
-                <img src="assets/imagenes/delta/delta-05.jpg" alt="Lancia Delta S4 enfocado en la parte delantera izquierda" width="400">
-                <img src="assets/imagenes/delta/delta-06.jpg" alt="Lancia Delta S4 enfocado en la parte delantera central visto desde altura" width="400">
-                <img src="assets/imagenes/delta/delta-07.jpg" alt="Lancia Delta S4 plano general mas cinematografico" width="400">
-                <img src="assets/imagenes/delta/delta-08.jpg" alt="Lancia Delta S4 plano trasero general, con el motor a la vista" width="400">
-                <img src="assets/imagenes/delta/delta-09.jpg" alt="Lancia Delta S4 plano delantero lateral" width="400">
-
-                <ul>
-                    <li>Marca: Lancia</li>
-                    <li>Modelo: Delta S4</li>
-                    <li>Año: 1985</li>
-                </ul>
-
-                <h4>Especificaciones</h4>
-
-                <ul>
-                    <li>Motor: cuatro cilindros en línea 1.8</li>
-                    <li>Potencia: 480-500 HP</li>
-                    <li>0-100 km/h: 2,3 s</li>
-                    <li>Tracción: Integral</li>
-                    <li>sobrealimentación: Forzada, compresor volumétrico + turbocompresor</li>
-                </ul>
-
-                <p>Valoración: 5/5</p>
-
-                <h4>Mi encuentro con el auto</h4>
-
-                <p>Lugar: Motor Zone</p>
-                <p>Fecha: 13/09/2025</p>
-
-                <h4>Opinión personal:</h4>
-                <p>Un auto unico en su especie, que me facina hace años, El hecho de que usara un sistema de doble sobrealimentación (twin-charging) que combinaba un supercargador Volumex y un turbo KKK, me volaba la cabeza, simplemente tenia potencia siempre que lo necesitaras, igualmente este auto es un trago semi amargo, ya que no destaco mucho en la competicion por su tardia incorporacion a la competicion</p>
-
-            </article>
-
-            <article>
-
-                <h3>Lancia 037</h3>
-
-                <img src="assets/imagenes/037/037-1.jpg" alt="lancia 037 plano general" width="400">
-                <img src="assets/imagenes/037/037-2.jpg" alt="lancia 037 plano luz delantera" width="400">
-                <img src="assets/imagenes/037/037-3.jpg" alt="lancia 037 plano rueda trasera" width="400">
-                <img src="assets/imagenes/037/037-4.jpg" alt="lancia 037 plano de nombre de pilotos" width="400">
-                <img src="assets/imagenes/037/037-5.jpg" alt="lancia 037 plano lateral trasero" width="400">
-                <img src="assets/imagenes/037/037-6.jpg" alt="lancia 037 plano delantero ala derecha" width="400">
-                <img src="assets/imagenes/037/037-7.jpg" alt="lancia 037 plano calcomania grupo b" width="400">
-                <img src="assets/imagenes/037/037-8.jpg" alt="lancia 037 plano capo monte carlo 1984" width="400">
-                <img src="assets/imagenes/037/037-9.jpg" alt="lancia 037 plano volante" width="400">
-                <img src="assets/imagenes/037/037-10.jpg" alt="lancia 037 plano cabina interior" width="400">
-                <img src="assets/imagenes/037/037-11.jpg" alt="lancia 037 plano lateral trasero motor abierto" width="400">
-                <img src="assets/imagenes/037/037-12.jpg" alt="lancia 037 plano trasero motor abierto" width="400">
-                <img src="assets/imagenes/037/037-13.jpg" alt="lancia 037 plano trasero entero" width="400">
-
-
-                <ul>
-                    <li>Marca: Lancia </li>
-                    <li>Modelo: 037 </li>
-                    <li>Año: 1982 </li>
-                </ul>
-
-                <h4>Especificaciones</h4>
-
-                <ul>
-                    <li>Motor: cuatro cilindros en línea 2.1 </li>
-                    <li>Potencia: 325 HP</li>
-                    <li>0-100 km/h: 4 s </li>
-                    <li>Tracción: Trasera</li>
-                    <li>Inducción forzada: compresor volumétrico</li>
-                </ul>
-
-                <p>Valoración: 4.5/5</p>
-
-                <h4>Mi encuentro con el auto</h4>
-
-                <p>Lugar: Exoticos en Argentina </p>
-                <p>Fecha: 01/06/2025</p>
-
-            </article>
-
-            <article>
-
-                <h3> </h3>
-
-                <img src="" alt="">
-
-                <ul>
-                    <li>Marca: </li>
-                    <li>Modelo: </li>
-                    <li>Año: </li>
-                </ul>
-
-                <h4>Especificaciones</h4>
-
-                <ul>
-                    <li>Motor: </li>
-                    <li>Potencia: </li>
-                    <li>0-100 km/h: </li>
-                    <li>Tracción: </li>
-                    <li>Inducción forzada: </li>
-                </ul>
-
-                <p>Valoración: /5</p>
-
-                <h4>Mi encuentro con el auto</h4>
-
-                <p>Lugar: </p>
-                <p>Fecha: </p>
-
-
-            </article>
-
-        </section>
 
         <section id="alemanes">
             <h2>Alemanes</h2>
@@ -236,3 +19,41 @@
 
 
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p>Fui aprendiendo sobre el rally de una manera bastante cronológica, y por eso me pegó muy fuerte conocer el cambio que produjo la llegada del Lancia Stratos. Me fascinó descubrir que Lancia
+               había creado un auto pensado específicamente para competir y que después tuvo que producir una versión de calle para poder homologarlo. El Stratos fue homologado por la FIA en 1974 dentro
+               del Grupo 4 y terminó convirtiéndose en uno de los autos más importantes de la historia del rally.</p>
+
+            <p>Creo que ahí empezó una parte importante de mi pasión por Lancia. Después llegaron creaciones monstruosas como el 037 y el Delta S4, que representan perfectamente esa época en la que las
+               marcas buscaban llevar al límite las posibilidades de los reglamentos. El Grupo B, que entró en vigor en 1982, permitió una libertad técnica enorme y terminó dando lugar a algunos de los
+               autos más extremos que se hayan visto en el rally.</p>
+
+            <p>Lancia también me fascina por las pequeñas picardías y soluciones que
+               aparecieron durante esa época. Una de las historias que más me llama la
+               atención es la del 037, un auto de tracción trasera que tuvo que
+               enfrentarse a rivales de tracción integral. A pesar de esa desventaja,
+               Lancia consiguió ganar el Campeonato Mundial de Constructores de 1983,
+               convirtiéndose en el último fabricante en conseguirlo con un auto de
+               tracción trasera.</p>
+
+            <p>Pero Lancia no fue la única marca que hizo que me enamorara del rally. También están el Ford RS200, con su motor central, tracción integral y su chasis de aluminio; el carisma del
+               Peugeot 205 T16; y, por supuesto, el Audi Quattro, que me enamoro con el sonido angelical de su motor de 5 cilindros en línea, y el turbocompresor kkk.
+               si tuviera que mencionar a un piloto en particular sin lugar a dudas esa seria Michèle Mouton</p>
