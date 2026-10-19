@@ -55,6 +55,65 @@
 
     </header>
 
+    <main>
+
+
+      <div id="music-player">
+
+            <button id="play-btn" aria-label="Reproducir">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5.5v13l10-6.5z"></path>
+                </svg>
+            </button>
+
+            <div id="track-info">
+                <span id="track-title">NEBULA — RONIN</span>
+                <span id="track-artist">PhonkaHouse</span>
+            </div>
+
+            <span id="current-time">0:00</span>
+
+            <input 
+                type="range" 
+                id="progress-bar" 
+                value="0" 
+                min="0" 
+                step="1"
+            >
+
+            <span id="duration">0:00</span>
+
+            <button id="mute-btn" aria-label="Silenciar">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+                    <path d="M16 9.5c1 .8 1.5 1.8 1.5 2.5s-.5 1.7-1.5 2.5"></path>
+                    <path d="M18.5 7c1.5 1.3 2.5 3 2.5 5s-1 3.7-2.5 5"></path>
+                </svg>
+            </button>
+
+            <input
+                type="range"
+                id="volume-bar"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+            >
+
+            <audio
+                id="audio"
+                preload="metadata"
+                loop>
+
+                <source
+                    src="assets/musica/Nebula-Ronin.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+      </div>
+    </main>
+
   
 </body>
 
