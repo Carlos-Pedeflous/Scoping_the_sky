@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Eurostile";
+    src: url("assets/fonts/EurostileExtendedBlack.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "OCR-B";
+    src: url("assets/fonts/OCR-B.ttf")
+        format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #F0EEF5;
+    font-family: Arial, sans-serif;
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+}
+
+#inicio {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("/assets/imagenes/delta/delta-02.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+    padding: 30px 20px;
+}
+
+#inicio > a {
+    display: block;
+    width: min(900px, 75vw);
+    max-width: 100%;
+}
+
+#titulo {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    font-family: "Eurostile", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#navegador {
+    width: 100%;
+    text-align: center;
+}
+
+#navegador ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+}
+
+#navegador a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-family: "Eurostile", sans-serif;
+    font-size: 1.5rem;
+    color: #F0EEF5;
+    text-decoration: none;
+
+    border: 1.5px solid #333333;
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    transition: 0.2s ease;
+}
+
+#navegador a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+#navegador a img {
+    width: 28px;
+    height: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+
+    transition: 0.2s ease;
+}
+
+#navegador a:hover img {
+    transform: scale(1.1);
+}
