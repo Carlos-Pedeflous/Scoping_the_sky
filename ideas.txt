@@ -22,38 +22,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <p>Fui aprendiendo sobre el rally de una manera bastante cronológica, y por eso me pegó muy fuerte conocer el cambio que produjo la llegada del Lancia Stratos. Me fascinó descubrir que Lancia
-               había creado un auto pensado específicamente para competir y que después tuvo que producir una versión de calle para poder homologarlo. El Stratos fue homologado por la FIA en 1974 dentro
-               del Grupo 4 y terminó convirtiéndose en uno de los autos más importantes de la historia del rally.</p>
-
-            <p>Creo que ahí empezó una parte importante de mi pasión por Lancia. Después llegaron creaciones monstruosas como el 037 y el Delta S4, que representan perfectamente esa época en la que las
-               marcas buscaban llevar al límite las posibilidades de los reglamentos. El Grupo B, que entró en vigor en 1982, permitió una libertad técnica enorme y terminó dando lugar a algunos de los
-               autos más extremos que se hayan visto en el rally.</p>
-
-            <p>Lancia también me fascina por las pequeñas picardías y soluciones que
-               aparecieron durante esa época. Una de las historias que más me llama la
-               atención es la del 037, un auto de tracción trasera que tuvo que
-               enfrentarse a rivales de tracción integral. A pesar de esa desventaja,
-               Lancia consiguió ganar el Campeonato Mundial de Constructores de 1983,
-               convirtiéndose en el último fabricante en conseguirlo con un auto de
-               tracción trasera.</p>
-
-            <p>Pero Lancia no fue la única marca que hizo que me enamorara del rally. También están el Ford RS200, con su motor central, tracción integral y su chasis de aluminio; el carisma del
-               Peugeot 205 T16; y, por supuesto, el Audi Quattro, que me enamoro con el sonido angelical de su motor de 5 cilindros en línea, y el turbocompresor kkk.
-               si tuviera que mencionar a un piloto en particular sin lugar a dudas esa seria Michèle Mouton</p>
+ Coded by <a href="https://github.com/Carlos-Pedeflous">Carlos Pedeflous</a>  FOoTER!

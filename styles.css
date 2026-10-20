@@ -438,7 +438,6 @@ main ul {
     line-height: 1.7;
 }
 
-
 /* Separador entre introducción y rally */
 
 .section-divider {
@@ -549,6 +548,451 @@ main ul {
     line-height: 1.8;
 }
 
+/* ENCABEZADO AUTO ESPECIAL */
+
+.s4-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    width: 100%;
+    margin-bottom: 18px;
+
+    font-family: "OCR-B", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+}
+
+.s4-section-heading__index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+
+    border: 1px solid #e50000;
+
+    color: #e50000;
+}
+
+.s4-section-heading__label {
+    color: #f0eef5;
+    white-space: nowrap;
+}
+
+.s4-section-heading__line {
+    height: 1px;
+    flex: 1;
+
+    background: #292929;
+}
+
+.s4-section-heading__category {
+    color: #666;
+    font-size: 0.65rem;
+    white-space: nowrap;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+    .s4-section-heading {
+        gap: 9px;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+
+    .s4-section-heading__index {
+        width: 26px;
+        height: 26px;
+    }
+
+    .s4-section-heading__category {
+        font-size: 0.55rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .s4-section-heading__category {
+        display: none;
+    }
+}
+
+/* CARRUSEL LANCIA DELTA S4 */
+
+.s4-carousel {
+    position: relative;
+    width: 100%;
+
+    height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+
+    overflow: hidden;
+    background-color: #080808;
+}
+
+.s4-carousel__track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* IMÁGENES Y TRANSICIÓN */
+
+.s4-carousel__image {
+    position: absolute;
+    inset: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    opacity: 0;
+    transform: translateX(8px);
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.s4-carousel__image.active {
+    opacity: 1;
+    transform: translateX(0);
+
+    pointer-events: auto;
+}
+
+.s4-carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    width: 32px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+
+    background: rgb(0 0 0 / 45%);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+    opacity: 0;
+    transition:
+        opacity 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.s4-carousel:hover .s4-carousel__arrow {
+    opacity: 1;
+}
+
+.s4-carousel__arrow:hover {
+    background: #e50000;
+}
+
+.s4-carousel__arrow--prev {
+    left: 12px;
+}
+
+.s4-carousel__arrow--next {
+    right: 12px;
+}
+
+
+.s4-carousel__counter {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    z-index: 2;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    padding: 5px 8px;
+    background: rgb(0 0 0 / 55%);
+
+    font-family: "OCR-B", monospace;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.s4-carousel__separator {
+    color: #e50000;
+}
+
+/* ANIMACIÓN DEL CARRUSEL */
+
+.s4-carousel__image {
+    opacity: 0;
+    transform: translateX(8px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.s4-carousel__image.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* DISTRIBUCIÓN DEL DELTA S4 */
+
+.s4-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 14px;
+    align-items: stretch;
+}
+
+   /* COLUMNA DERECHA */
+.s4-info {
+    display: grid;
+
+    grid-template-rows:
+        auto
+        auto
+        1fr;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+   /* CAJAS DE INFORMACIÓN */
+
+.s4-info-box {
+    border: 1px solid #292929;
+    background: #111;
+
+    padding: 20px;
+
+    min-width: 0;
+}
+
+.s4-label {
+    display: block;
+
+    font-family: "OCR-B", monospace;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 2px;
+
+    color: #e50000;
+
+    margin-bottom: 10px;
+}
+
+.s4-info-box h3 {
+    font-family: "Eurostile", sans-serif;
+
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+
+    margin: 0;
+}
+
+.s4-info-box p {
+    font-family: "OCR-B", monospace;
+
+    font-size: 0.8rem;
+
+    color: #aaa;
+
+    margin-top: 6px;
+}
+
+   /* MODELO 3D */
+
+.s4-model {
+    display: flex;
+    flex-direction: column;
+}
+
+.model-viewer {
+    flex: 1;
+    min-height: 0;
+
+    margin-top: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #292929;
+    background: #080808;
+}
+
+.model-viewer iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+   /* HISTORIA */
+
+.s4-history {
+    margin-top: 40px;
+
+    max-width: 100%;
+
+    border-top: 1px solid #292929;
+
+    padding-top: 30px;
+}
+
+.s4-history h3 {
+    font-family: "Eurostile", sans-serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.s4-history p {
+    max-width: 900px;
+
+    color: #c5c5c5;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+   /* ESPECIFICACIONES */
+
+.s4-specs {
+    margin-top: 40px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #292929;
+}
+
+.s4-specs h4 {
+    font-family: "Eurostile", sans-serif;
+}
+
+.s4-specs ul {
+    margin-bottom: 25px;
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+    .s4-carousel__arrow {
+        width: 30px;
+        height: 38px;
+        opacity: 1;
+    }
+
+    .s4-carousel__arrow--prev {
+        left: 8px;
+    }
+
+    .s4-carousel__arrow--next {
+        right: 8px;
+    }
+
+    .s4-carousel__counter {
+        bottom: 8px;
+        right: 8px;
+    }
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 600px) {
+    .s4-carousel {
+        height: 55vh;
+        min-height: 280px;
+    }
+
+    .s4-carousel__arrow {
+        width: 38px;
+        height: 52px;
+        font-size: 1.1rem;
+    }
+
+    .s4-carousel__arrow--prev {
+        left: 10px;
+    }
+
+    .s4-carousel__arrow--next {
+        right: 10px;
+    }
+}
+
+
+/* CRÉDITOS DEL MODELO 3D */
+
+.model-credits {
+    padding: 12px 14px;
+
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-top: none;
+}
+
+.model-credits__author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+
+    margin: 0;
+
+    font-family: "OCR-B", monospace;
+    font-size: 0.7rem;
+    line-height: 1.8;
+    color: #777;
+}
+
+.model-credits__author a {
+    color: #aaa;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.model-credits__author a:hover {
+    color: #e50000;
+}
+
+.model-credits__separator {
+    color: #e50000;
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+    .model-credits {
+        padding: 10px;
+    }
+
+    .model-credits__author {
+        font-size: 0.65rem;
+        gap: 5px;
+    }
+}
 
 /* ADAPTACIÓN A MÓVILES */
 
@@ -696,4 +1140,25 @@ main ul {
     #progress-bar {
         min-width: 25px;
     }
+}
+
+@media (max-width: 800px) {
+
+    .s4-layout {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .s4-carousel {
+        width: 100%;
+    }
+
+    .s4-info {
+        grid-template-rows: auto;
+    }
+
+    .model-placeholder {
+        min-height: 300px;
+    }
+
 }

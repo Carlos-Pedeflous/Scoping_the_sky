@@ -11,10 +11,7 @@ const duration = document.getElementById("duration");
 const muteBtn = document.getElementById("mute-btn");
 const volumeBar = document.getElementById("volume-bar");
 
-
-// ========================================
 // ICONOS SVG
-// ========================================
 
 const playIcon = `
 <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -45,10 +42,7 @@ const muteIcon = `
 </svg>
 `;
 
-
-// ========================================
 // FUNCIONES PARA CAMBIAR ICONOS
-// ========================================
 
 function setPlayIcon() {
     playBtn.innerHTML = playIcon;
@@ -68,18 +62,12 @@ function updateVolumeIcon() {
 
 }
 
-
-// ========================================
 // ICONOS INICIALES
-// ========================================
 
 setPlayIcon();
 updateVolumeIcon();
 
-
-// ========================================
 // PLAY / PAUSE
-// ========================================
 
 playBtn.addEventListener("click", () => {
 
@@ -103,10 +91,7 @@ playBtn.addEventListener("click", () => {
 
 });
 
-
-// ========================================
 // DURACIÓN
-// ========================================
 
 audio.addEventListener("loadedmetadata", () => {
 
@@ -116,10 +101,7 @@ audio.addEventListener("loadedmetadata", () => {
 
 });
 
-
-// ========================================
 // PROGRESO
-// ========================================
 
 audio.addEventListener("timeupdate", () => {
 
@@ -129,10 +111,7 @@ audio.addEventListener("timeupdate", () => {
 
 });
 
-
-// ========================================
 // BARRA DE PROGRESO
-// ========================================
 
 progressBar.addEventListener("input", () => {
 
@@ -140,10 +119,7 @@ progressBar.addEventListener("input", () => {
 
 });
 
-
-// ========================================
 // VOLUMEN
-// ========================================
 
 volumeBar.addEventListener("input", () => {
 
@@ -159,10 +135,7 @@ volumeBar.addEventListener("input", () => {
 
 });
 
-
-// ========================================
 // MUTE
-// ========================================
 
 muteBtn.addEventListener("click", () => {
 
@@ -172,10 +145,7 @@ muteBtn.addEventListener("click", () => {
 
 });
 
-
-// ========================================
 // CUANDO TERMINA LA CANCIÓN
-// ========================================
 
 audio.addEventListener("ended", () => {
 
@@ -183,10 +153,7 @@ audio.addEventListener("ended", () => {
 
 });
 
-
-// ========================================
 // ERROR DE AUDIO
-// ========================================
 
 audio.addEventListener("error", () => {
 
@@ -194,10 +161,7 @@ audio.addEventListener("error", () => {
 
 });
 
-
-// ========================================
 // FORMATO DEL TIEMPO
-// ========================================
 
 function formatTime(seconds) {
 
@@ -234,5 +198,60 @@ window.addEventListener("scroll", () => {
     );
 
     dividerImage.style.transform = `translateY(${limitedMovement}px)`;
+
+});
+
+// CARRUSEL FOTOS DELTA S4
+
+const carousel = document.querySelector(".s4-carousel");
+
+const images = carousel.querySelectorAll(".s4-carousel__image");
+
+const previousButton = carousel.querySelector(".s4-carousel__arrow--prev");
+const nextButton = carousel.querySelector(".s4-carousel__arrow--next");
+
+const currentCounter = carousel.querySelector(".s4-carousel__current");
+
+let currentIndex = 0;
+
+
+// MOSTRAR IMAGEN CON TRANSICIÓN
+
+function showImage(index) {
+
+    // Calcular el nuevo índice
+    const newIndex = (index + images.length) % images.length;
+
+    // Evitar animaciones innecesarias
+    if (newIndex === currentIndex) return;
+
+    // Ocultar la imagen actual
+    images[currentIndex].classList.remove("active");
+
+    // Actualizar el índice
+    currentIndex = newIndex;
+
+    // Mostrar la nueva imagen
+    images[currentIndex].classList.add("active");
+
+    // Actualizar el contador
+    currentCounter.textContent = String(currentIndex + 1).padStart(2, "0");
+}
+
+
+// BOTÓN ANTERIOR
+
+previousButton.addEventListener("click", () => {
+
+    showImage(currentIndex - 1);
+
+});
+
+
+// BOTÓN SIGUIENTE
+
+nextButton.addEventListener("click", () => {
+
+    showImage(currentIndex + 1);
 
 });
