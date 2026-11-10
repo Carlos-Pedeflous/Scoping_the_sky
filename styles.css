@@ -423,16 +423,26 @@ main ul {
 }
 
 .intro h2 {
+    font-family: "Eurostile", sans-serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    font-weight: normal;
+    color: #f0eef5;
+
     width: fit-content;
     margin-bottom: 28px;
-    padding-bottom: 10px;
+}
 
-    font-family: "Eurostile", sans-serif;
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: normal;
+.intro h2::before {
+    content: "";
+    display: block;
 
-    color: #f0eef5;
-    border-bottom: 2px solid #e50000;
+    width: 55px;
+    height: 3px;
+
+    margin-bottom: 16px;
+
+    background: #e50000;
 }
 
 .intro-content {
@@ -819,23 +829,26 @@ main ul {
     display: block;
 
     font-family: "OCR-B", monospace;
-
     font-size: 0.7rem;
-
     letter-spacing: 2px;
-
     color: #e50000;
 
     margin-bottom: 10px;
 }
 
-.s4-info-box h3 {
-    font-family: "Eurostile", sans-serif;
+.s4-label::before {
+    content: "";
+    display: block;
 
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    width: 30px;
+    height: 2px;
 
-    margin: 0;
+    background: #e50000;
+
+    margin-bottom: 10px;
 }
+
+
 
 .s4-info-box p {
     font-family: "OCR-B", monospace;
@@ -915,8 +928,15 @@ main ul {
     border-top: 1px solid #292929;
 }
 
-.s4-specs h4 {
-    font-family: "Eurostile", sans-serif;
+.s4-history h3::before,
+
+.s4-specs h4::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 3px;
+    background: #e50000;
+    margin-bottom: 18px;
 }
 
 .s4-specs ul {
@@ -1007,6 +1027,222 @@ main ul {
 
 .model-credits__separator {
     color: #e50000;
+}
+
+/* historia */
+
+.s4-history {
+    width: 100%;
+    margin-top: 100px;
+    padding: 55px 0;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+}
+
+.s4-history h3 {
+    font-family: "Eurostile", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F0EEF5;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.s4-history h3::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 3px;
+    background: #e50000;
+    margin-bottom: 18px;
+}
+
+.s4-history p {
+    max-width: 900px;
+    color: #a5a5a5;
+    font-family: "OCR-B", monospace;
+    font-size: 0.85rem;
+    line-height: 2;
+    margin-bottom: 22px;
+}
+
+/* DETALLES DEL AUTO ESPECIAL */
+
+.s4-details-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 22px;
+    align-items: stretch;
+}
+
+/* CAJAS */
+
+.s4-detail-box {
+    min-width: 0;
+    padding: 24px;
+    border: 1px solid #444;
+    background: #080808;
+}
+
+/* TÍTULOS DE LAS CAJAS */
+
+.s4-history h3,
+.s4-detail-box h3 {
+    font-family: "Eurostile", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #f0eef5;
+    margin-bottom: 25px;
+}
+
+.s4-history h3::before,
+.s4-detail-box h3::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #e50000;
+    margin-bottom: 13px;
+}
+
+/* HISTORIA */
+
+.s4-history {
+    margin: 0;
+    padding: 24px;
+    border: 1px solid #444;
+}
+
+.s4-history p {
+    max-width: 100%;
+    margin-bottom: 22px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: normal;
+    line-height: 1.85;
+    letter-spacing: 0.1px;
+
+    color: #b5b5b5;
+}
+
+/* COLUMNA DERECHA */
+
+.s4-detail-side {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    min-width: 0;
+}
+
+/* ENCUENTRO */
+
+.s4-detail-box > p {
+    color: #aaa;
+    font-family: "OCR-B", monospace;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+.s4-detail-box > p span {
+    display: inline-block;
+    width: 65px;
+    color: #e50000;
+    font-size: 0.65rem;
+}
+
+/* ESPECIFICACIONES */
+
+.s4-detail-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.s4-detail-box li {
+    padding: 7px 0;
+    border-bottom: 1px solid #242424;
+    color: #aaa;
+    font-family: "OCR-B", monospace;
+    font-size: 0.72rem;
+    line-height: 1.6;
+}
+
+.s4-detail-box li:last-child {
+    border-bottom: none;
+}
+
+/* OPINIÓN Y VALORACIÓN */
+
+.s4-opinion {
+    display: flex;
+    flex-direction: column;
+}
+
+.s4-opinion > p {
+    flex: 1;
+}
+
+.s4-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #292929;
+    font-family: "OCR-B", monospace;
+}
+
+.s4-rating span,
+.s4-rating small {
+    color: #777;
+    font-size: 0.6rem;
+}
+
+.s4-rating strong {
+    color: #e50000;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* CIERRE DEL BLOQUE */
+
+.s4-bottom-divider {
+    width: 100%;
+    height: 1px;
+    margin-top: 22px;
+    background: #777;
+}
+
+.s4-stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.s4-stars svg {
+    width: 19px;
+    height: 19px;
+    fill: #e50000;
+    stroke: #e50000;
+    stroke-width: 0.5;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 800px) {
+    .s4-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .s4-detail-side {
+        grid-template-rows: auto;
+    }
 }
 
 /* MÓVILES */
